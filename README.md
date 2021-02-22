@@ -68,7 +68,7 @@ The webhook config file uses the kubeconfig format to specify the remote address
 > Credit: https://kubernetes.io/docs/tasks/debug-application-cluster/audit/#webhook-backend
 
 # How can you enable embedded web server available within the Falco project ?
-In this demo, we are going to using Helm to install the Falco, so, there is value that we can enableor disable to audit log feature called "auditLog.enabled", if we enable this, the embedded webserveris going to start within the Falco to consume audit events at port *8765* and behind the *k8s-audit* endpoint.
+In this demo, we are going to using Helm to install the Falco, so, there is value that we can enable or disable audit log feature called "auditLog.enabled", if we enable this, the embedded webserver is going to start within the Falco to consume audit events at port *8765* and behind the *k8s-audit* endpoint.
 
 # What is the purpose of Falcosidekick project ?
 By default, Falco has 5 outputs for its events: stdout, file, gRPC, shell and http.Even if they're convenient, we can quickly be limited to integrating Falco with other components. Here comes falcosidekick, a little daemon that extends that number of possible outputs.
