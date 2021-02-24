@@ -97,7 +97,7 @@ Beyond that, it provides metrics about the number of events and let you add cust
 In this demo, we are going provision our k3s cluster using Terraform and Ansible with HA support. To get more detail about the installation of the k3s cluster please follow the [link.](https://github.com/developer-guy/kubernetes-cluster-setup-using-terraform-and-k3s-on-digitalocean)
 First, we are going to install Falco and the Falcosidekick with UI enabled. In order to do that, we'll use the Helm.
 ```bash
-$ helm install falco --namespace falco --set falco.jsonOutput=true --set falco.httpOutput.enabled=true --set falco.httpOutput.url=http://falcosidekick:2801 --set falcosidekick.enabled=true --set falcosidekick.webui.enabled=true  falcosecurity/falco --set auditLog.enabled=true --create-namespace
+$ helm install falco --namespace falco --set falcosidekick.enabled=true --set falcosidekick.webui.enabled=true  falcosecurity/falco --set auditLog.enabled=true --create-namespace
 NAME: falco
 LAST DEPLOYED: Sun Feb 21 23:53:05 2021
 NAMESPACE: falco
