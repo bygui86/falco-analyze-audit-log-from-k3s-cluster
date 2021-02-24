@@ -73,7 +73,7 @@ In this demo, we are going to using Helm to install the Falco, so, there is valu
 # What is the purpose of Falcosidekick project ?
 By default, Falco has 5 outputs for its events: stdout, file, gRPC, shell and http.Even if they're convenient, we can quickly be limited to integrating Falco with other components. Here comes falcosidekick, a little daemon that extends that number of possible outputs.
 
-The current list of available falcosidekick outputs (version 2.13.0) is:
+The current list of available falcosidekick outputs (version 2.21.0) is:
 
 * Slack
 * Rocketchat
